@@ -1,0 +1,105 @@
+@import "https://fonts.googleapis.com/css?family=Open+Sans|Roboto:300";
+
+body {
+margin: 0;
+  /*background-image: url("https://hdqwalls.com/download/abstract-gradient-4s-1920x1080.jpg");
+  */
+background-image:url(../img/bg.jpg);
+background-position:center;
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+  background-size: 100%;
+}
+
+nav {
+  list-style-type: none;
+  margin-top: 25px;
+  margin-left:45px;
+  margin-bottom: 50px;
+  height:1000px
+  width: 25%;
+  background-color:rgba(255, 255, 255, 0.9);
+  position: fixed;
+  overflow: auto;
+}
+
+h2,h1,h3,p{
+	 color:#000000;
+	 font-family:  sans-serif;
+}
+
+ .mainmenu a.active {
+  border: 30px solid rgba(255, 255, 255, 0.9);
+  border-width: 10px 5px;
+  background-color: #212121;
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+}
+
+
+/* define a fixed width for the entire menu */
+.navigation {
+  width: 300px;
+}
+
+/* reset our lists to remove bullet points and padding */
+.mainmenu, .submenu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* make ALL links (main and submenu) have padding and background color */
+.mainmenu a {
+  text-transform: uppercase;
+  display: block;
+  text-decoration: none;
+  padding: 10px;
+  color: #000;
+  font-family: "Segoe UI", sans-serif;
+  font-weight: bold;
+  border: 30px solid rgba(255, 255, 255, 0.9);
+  border-width: 0px 0px 3px 0px;
+
+}
+
+/* add hover behaviour */
+.mainmenu a:hover {
+    background-color: #cccccc;
+    color:#ffffff
+}
+
+
+/* when hovering over a .mainmenu item,
+  display the submenu inside it.
+  we're changing the submenu's max-height from 0 to 200px;
+*/
+
+.mainmenu li:hover .submenu {
+  display: block;
+  max-height: 200px;
+}
+
+/*
+  we now overwrite the background-color for .submenu links only.
+  CSS reads down the page, so code at the bottom will overwrite the code at the top.
+*/
+
+.submenu a {
+  background-color: #cccccc;
+}
+
+/* hover behaviour for links inside .submenu */
+.submenu a:hover {
+  background-color: #cccccc;
+}
+
+/* this is the initial state of all submenus.
+  we set it to max-height: 0, and hide the overflowed content.
+*/
+.submenu {
+  overflow: hidden;
+  max-height: 0;
+  -webkit-transition: all 0.5s ease-out;
+}
