@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="..\css\style.css">
+<style>
+h2{
+  color:#000;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+}
+</style>
+</head>
+<body>
+
+
+  <nav class="navigation">
+  <ul class="mainmenu">
+    <li><a href="..\index.html">Home</a></li>
+    <li><a>Form</a>
+       <ul class="submenu">
+        <li><a href="get.html">GET</a></li>
+        <li><a href="post.html">POST</a></li>
+        <li><a href="file-upload.html">File Upload</a></li>
+      </ul>
+    </li> 
+    <li><a>Cookies</a>
+      <ul class="submenu">
+        <li><a href="enabled-disabled.html">Enabled/Disabled</a></li>
+        <li><a href="create-retrieve.html">Create/Retrieve</a></li>
+        <li><a href="modify-delete.html">Modify/Delete</a></li>
+      </ul>
+    </li>
+    <li><a>Sessions</a>
+      <ul class="submenu">
+        <li><a href="start.html">Start</a></li>
+        <li><a href="get-modify.html">Get/Modify</a></li>
+        <li><a href="destroy.html">Destroy</a></li>
+      </ul>
+    </li>
+    <li><a>Date/Time</a>
+      <ul class="submenu">
+        <li><a href="today-is.html">Today is</a></li>
+        <li><a href="timezone.html">Timezone</a></li>
+        <li><a href="timestamp.html">Timestamp</a></li>
+      </ul> 
+    </li>
+    <li><a class ="active" href="reserved.html">Database</a></li>
+    <li><a href="phpinfo.html">PHPinfo</a></li>
+  </ul>
+</nav>
+
+
+<div style="margin-left:18%;padding:1px 16px;height:60px;">
+  <nav class="bar"><a href="connect.html">Connect</a>
+  <a href="create_database.html">Create DataBase</a>
+  <a href="create_table.html">Create Table</a>
+  <a href="create_data.html">Create Data</a>
+  <a href="read_data.html">Read Data</a>
+  <a href="update_data.html">Update Data</a>
+  <a href="delete_data.html">Delete Data</a></nav>
+</div>
+
+<div style="margin-left:25%;padding:1px 16px;">
+<h2>
+ <form action="../backend/read_data.php" method="post">
+    <p>
+        <label for="TableName">Table Name:</label>
+        <input type="text" name="table_name" id="tableName">
+    </p>
+    <input type="submit" value="Read Data">
+</form>
+</h2>
+</div>
+
+</body>
+</html>
