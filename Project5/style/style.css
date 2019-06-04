@@ -1,0 +1,263 @@
+@import "https://fonts.googleapis.com/css?family=Open+Sans|Roboto:300";
+
+        .navbar{
+            background:#313a4b;
+        }
+        .nav-link , .navbar-brand{
+            color: #f4f4f4;
+            cursor: pointer;
+        }
+        .nav-link{
+            margin-right: 1em !important;
+        }
+        .nav-link:hover{
+            background: #f4f4f4;
+            color: #313a4b;
+        }
+        .navbar-collapse{
+            justify-content: flex-end;
+        }
+        .navbar-toggler{
+            background:#fff !important;
+        }
+        .bg-dark{
+            background-color:#343a40!important
+        }
+        .bg-primary{
+            background-color:#343a40!important
+        }
+        .overlay{
+         min-height: 100%;
+         min-width: 100%;
+         left: 0;
+         top: 0;
+         background: rgba(244, 244, 244, 0.25);
+        }
+        p,h3,h2,tr,ul,.ss{
+            color: #fff;
+            font-family: 'Open Sans', sans-serif;
+            font-style: bold;
+        }
+
+        .tr-dark{
+          color: #000;
+            font-family: 'Open Sans', sans-serif;
+            font-style: bold;
+        }
+
+        h1{
+          color: #313a4b;
+          font-family: 'Open Sans', sans-serif;
+          font-size: 5em;
+          font-style: bold;
+        }
+        #div1 {
+          width: 500px;
+          height: 220px;
+          padding: 10px;
+          border: 1px solid #aaaaaa;
+      }
+
+        .header{
+            background-image: url('../photo/bg.jpg');
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+        }
+        .headershort{
+            background-image: url('../photo/bg.jpg');
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+            max-height: 100px;
+        }
+      /* Phone icon */
+        .link{
+          position: fixed; /* Lock location always on the scree */
+          bottom: 0; /* Set to the bottom */
+          right: 0; /* Set to the right */
+          margin: 30px; /* Add space around background */
+        }
+        .icon{
+          width: 60px; 
+          height: 60px; 
+          opacity: 0.6;
+        }
+        .icon:hover{
+          opacity: 1;
+        }
+
+        @media screen and (max-width: 480px){
+          .lgscreenphone{
+            display: none;  /* On small screens make phone icon disappear */
+          }
+          .mbscreenphone{
+            display: block; /* On small screens make phone icon appear */
+          }
+        }
+        @media screen and (min-width: 481px){
+          .mbscreenphone{
+            display: none; /* On large screens make phone icon disappear */
+          }
+          .lgscreenphone{
+            display: block; /* On large screens make phone icon appear */
+          }
+        }
+
+        .carousel-inner img {
+        width: 100%;
+        height: 100%;
+        }
+        .about{
+        margin: 4em 0;
+        padding: 1em;
+        position: relative;
+        }
+        .about h1{
+        color:#F97300;
+        margin: 2em;
+        }
+        .about img{
+        height: 100%;
+        width: 100%;
+        border-radius: 50%
+        }
+        .about span{
+        display: block;
+        color: #888;
+        position: absolute;
+        left: 115px;
+        }
+        .about .desc{
+        padding: 2em;
+        border-left:4px solid #10828C;
+        }
+        .about .desc h3{
+        color: #10828C;
+        }
+        .about .desc p{
+        line-height:2;
+        color:#888;
+        }
+        .addReadMore.showlesscontent .SecSec,
+        .addReadMore.showlesscontent .readLess {
+            display: none;
+        }
+     
+        .addReadMore.showmorecontent .readMore {
+            display: none;
+        }
+     
+        .addReadMore .readMore,
+        .addReadMore .readLess {
+            font-weight: bold;
+            margin-left: 2px;
+            color: #cc9900;
+            cursor: pointer;
+        }
+     
+        .addReadMoreWrapTxt.showmorecontent .SecSec,
+        .addReadMoreWrapTxt.showmorecontent .readLess {
+            display: block;
+        }
+
+            /*zebra table*/
+        table {
+          border-collapse: collapse;
+          border-spacing: 0;
+          width: 100%;
+          border: 1px solid #ddd;
+        }
+
+        th, td {
+          text-align: left;
+          padding: 16px;
+        }
+
+        tr:nth-child(even) {
+          background-color: #f2f2f2
+        }
+
+        /* Links */
+        .social{
+          width:40px; 
+          height:40px;
+          position: absolute;
+
+        }
+
+        #task_wrapper{
+          margin-left: 10px;
+        }
+        
+        #task_wrapper{
+          list-style: none;
+        }
+        #task_wrapper li{
+          padding-bottom: 5px;
+        }
+        .remove_item{
+          color: red;
+          padding: 10px 5px 10px 10px;
+          
+        }
+        
+        .clickeable{
+          cursor: pointer;
+        }
+        
+        .update_icon{
+          color: green;
+          padding: 10px 10px 10px 0;
+        }
+        
+        .show{
+          display: block;
+        }
+        
+        .hide{
+          display: none;
+        }
+
+
+
+        /*workers*/
+        .controls {
+          padding: 4vw;
+          width: 75%;
+          margin: 10vw auto;
+          background-color: rgba(255,255,255,0.7);
+          border: 5px solid black;
+          opacity: 0.3;
+          transition: 1s all;
+        }
+        
+        .controls:hover, .controls:focus {
+          opacity: 1;
+        }
+        
+        .controls label, .controls p, .controls input {
+          font-size: 3vw;
+        }
+        
+        .controls div {
+          padding-bottom: 1rem;
+        }
+
+        #panel, #flip {
+          padding: 5px;
+          text-align: center;
+          background-color: #fff;
+          border: solid 1px #c3c3c3;
+        }
+        
+        #panel {
+          padding: 50px;
+          display: none;
+        }
+
+        .json_content{
+          color:white;
+        }
+
+        

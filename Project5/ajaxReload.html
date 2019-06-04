@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+
+<!-- Le styles -->
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
+<link href="style/ajax.css" rel="stylesheet">
+</head>
+
+<body>
+
+	<div class="hidden">
+
+		<div class="httpfile">
+			<a class="close">&times;</a>
+			<div class="row show-grid">
+				<div class="span2">
+					<div class="control-group">
+						<div class="controls">
+							<input type="text" class="input-medium fakeinputname" value="">
+						</div>
+					</div>
+				</div>
+
+				<div class="span3">
+					<div class="control-group">
+						<div class="controls">
+							<input class="input-file realinputvalue" multiple type="file">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="httpparameter">
+			<a class="close">&times;</a>
+			<div class="row show-grid">
+				<div class="span2">
+					<div class="control-group">
+						<div class="controls">
+							<input type="text" class="input-medium fakeinputname" value="">
+						</div>
+					</div>
+				</div>
+
+				<div class="span3">
+					<div class="control-group">
+						<div class="controls">
+							<input type="text" class="input-xlarge realinputvalue" value="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="httpauth">
+			<a class="close">&times;</a>
+			<div class="row show-grid">
+				<div class="span2">
+					<div class="control-group">
+						<div class="controls">
+							<input type="text" class="input-medium fakeinputname" value="">
+						</div>
+					</div>
+				</div>
+
+				<div class="span3">
+					<div class="control-group">
+						<div class="controls">
+							<input type="password" class="input-xlarge realinputvalue" value="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	</div>
+
+	<div class="container">
+
+		<div class="row show-grid">
+			<div id="leftcolumn" class="span6">
+				<form id="paramform" class="well" target="outputframe">
+					<fieldset id="cust">
+						<p>HTTP request options</p>
+
+						<div class="row show-grid">
+							<div class="span1">
+								<div class="control-group">
+									<label class="control-label" for="httpmethod">Method</label>
+									<div class="controls">
+										<select class="input-small" id="httpmethod">
+											<option>GET</option>
+											<option>POST</option>
+  											<option>OPTIONS</option>
+											<option>PUT</option>
+											<option>DELETE</option>
+											<option>HEAD</option>
+										</select>
+									</div>
+								</div>
+							</div>
+
+							<div class="span4">
+								<div class="control-group">
+									<label class="control-label" for="urlvalue">Endpoint</label>
+									<div class="controls">
+										<input type="text" class="input-xlarge" id="urlvalue"
+											value="https://httpbin.org/get">
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div align="left">
+							<button id="addauthbutton" class="btn" style="margin-bottom: 1.5em;">
+							 Add authentication
+							</button>
+						</div>
+
+						<div id="authentication">
+
+							<div class="row show-grid">
+								<div class="span2">
+									<div class="control-group">
+										<label class="control-label">Username</label>
+									</div>
+								</div>
+
+								<div class="span3">
+									<div class="control-group">
+										<label class="control-label">Password</label>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div id="allheaders">
+
+							<div class="row show-grid">
+								<div class="span2">
+									<div class="control-group">
+										<label class="control-label">Header Name</label>
+									</div>
+								</div>
+
+								<div class="span3">
+									<div class="control-group">
+										<label class="control-label">Header Value</label>
+									</div>
+								</div>
+							</div>
+
+						</div>
+
+						<div align="left">
+							<button id="addheaderbutton" class="btn">
+								 Add header
+							</button>
+						</div>
+						<br />
+
+						<div id="allparameters">
+
+							<div class="row show-grid">
+								<div class="span2">
+									<div class="control-group">
+										<label class="control-label">Parameter Name</label>
+									</div>
+								</div>
+
+								<div class="span3">
+									<div class="control-group">
+										<label class="control-label">Parameter Value</label>
+									</div>
+								</div>
+							</div>
+
+						</div>
+
+						<div align="left">
+							<button id="addprambutton" class="btn">
+								 Add parameter
+							</button>
+							<button id="addfilebutton" class="btn">
+								 Add file
+							</button>
+						</div>
+						<br />
+
+						<div align="right">
+							<button id="submitajax" class="btn btn-primary btn-large">
+								Ajax request
+							</button>
+						</div>
+					</fieldset>
+				</form>
+				<div id="errordiv"></div>
+        
+
+			</div>
+
+			<div class="span6">
+				<div id="ajaxoutput">
+					<p id="statuspre">Send request first</p>
+					<pre class=" prettyprint linenums" id="outputpre"></pre>
+					<p class=" prettyprint linenums" id="headerpre"></p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="jquery-3.4.1.min.js"></script>
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+	<script src="./js/ajaxReload.js"></script>
+  
+</body>
+</html>
